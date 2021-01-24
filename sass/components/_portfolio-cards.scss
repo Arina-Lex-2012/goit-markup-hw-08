@@ -1,18 +1,19 @@
 .portfolio-card-set {
   @extend %list;
+
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: calc(-1 * var(--portfolio-cards-gap));
+  margin-top: calc(-1 * var(--cards-gap));
 }
 
 .portfolio-card-set__item {
   outline: 1px solid #eeeeee;
 
-  margin-top: var(--portfolio-cards-gap);
+  margin-top: var(--cards-gap);
 
   &:not(:nth-child(3n + 1)) {
-    margin-left: var(--portfolio-cards-gap);
+    margin-left: var(--cards-gap);
   }
 
   &:hover {

@@ -1,20 +1,41 @@
 .clients {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .clients-card-set {
   @extend %list;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .clients-card-set__link {
   display: flex;
   justify-content: center;
   align-items: space-between;
-  width: 170px;
-  height: 90px;
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 90px;
+    margin-bottom: var(--cards-gap);
+
+    &:nth-child(5) {
+      margin-bottom: 0px;
+      border: 2px solidred;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 170px;
+    height: 90px;
+  }
 
   border: 1px solid #afb1b8;
   box-sizing: border-box;
