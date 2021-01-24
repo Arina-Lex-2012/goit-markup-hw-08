@@ -6,21 +6,31 @@
 
 .footer-list {
   @extend %list;
-  display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .footer-list__item {
-  &:first-child {
-    margin-right: 70px;
+  @media screen and (min-width: 480px) {
+    &:not(:last-child) {
+      padding-bottom: 60px;
+    }
   }
 
-  &:nth-child(2) {
-    margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    &:first-child {
+      margin-right: 70px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 93px;
+    }
   }
 }
 
 .footer-list__title {
-  padding-top: 12px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -29,6 +39,10 @@
   margin-bottom: 20px;
 
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 12px;
+  }
 }
 
 .footer-logo {
@@ -97,5 +111,72 @@
 .social-list__icon {
   .footer-list__item & {
     fill: #ffffff;
+  }
+}
+
+.footer-form {
+  @media screen and (min-width: 768px) {
+    width: 574px;
+  }
+}
+
+.footer-form__input {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
+
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  padding: 15px 16px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+
+  background: var(--accents);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  &::after {
+    content: "";
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    background-image: url("../images/send-icon.svg");
+    background-size: contain;
   }
 }
