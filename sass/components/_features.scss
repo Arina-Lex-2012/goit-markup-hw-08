@@ -1,17 +1,36 @@
 .features {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .features-card-set {
   @extend %list;
-  display: flex;
-  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .features-card-set__item {
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 480px) {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -24,6 +43,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  text-align: center;
 }
 
 .features-card-set__text {
@@ -39,7 +59,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-
   height: 120px;
 
   background: #f5f4fa;

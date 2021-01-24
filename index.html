@@ -21,9 +21,9 @@
             </a>
             <button 
             type="button" 
-            class="menu-button is-open"
+            class="menu-button"
             aria-expanded="false" 
-            aria-controls="mobile-menu"
+            aria-controls="menu"
             data-menu-button
             >
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -32,8 +32,8 @@
                 </svg>
             </button>
 
-            <div class="mobile-menu is-open" id="mobile-menu" data-menu>
-                <div class="mobile-navigation">
+            <div class="menu" id="menu" data-menu>
+                <div class="navigation">
                     <ul class="site-nav list">
                         <li class="site-nav__item">
                             <a class="site-nav__link current" href="./index.html"> Студия </a>
@@ -46,7 +46,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="mobile-address">
+                <div class="address">
                     <ul class="address-nav">
                         <li class="address-nav__item">
                             <a class="address-nav__link" href="mailto:info@devstudio.com">
@@ -67,37 +67,6 @@
                     </ul>
                 </div>
             </div>    
-            
-            <!-- <ul class="site-nav list">
-                <li class="site-nav__item">
-                    <a class="site-nav__link current" href="./index.html"> Студия </a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="portfolio.html"> Портфолио </a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href=""> Контакты </a>
-                </li>
-            </ul> -->
-            
-            <!-- <ul class="address-nav">
-                <li class="address-nav__item">
-                    <a class="address-nav__link" href="mailto:info@devstudio.com">
-                        <svg class="address-nav__icon">
-                            <use href="./images/sprite.svg#envelope"></use>
-                        </svg>
-                        <span>info@devstudio.com </span>
-                    </a>
-                </li>
-                <li class="address-nav__item">
-                    <a class="address-nav__link" href="tel:+380991111111">
-                        <svg class="address-nav__icon">
-                            <use href="./images/sprite.svg#smartphone"></use>
-                        </svg>
-                        <span>+38 096 111 11 11</span>
-                    </a>
-                </li>
-            </ul> -->
         </nav>
     </div>
 </header>
@@ -161,7 +130,7 @@
     </div> -->
 
     <!-- HERO -->
-    <!-- <section class="hero">
+    <section class="hero">
         <div class="container">
             <ul class="hero-content">
                 <li class="item">
@@ -172,10 +141,10 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
 
     <!-- FEATURES -->
-    <!-- <section class="features">
+    <section class="features">
         <div class="container">
             <ul class="features-card-set">
                 <li class="features-card-set__item">
@@ -204,7 +173,7 @@
                             <use href="./images/sprite.svg#feature-diagram"></use>
                         </svg>
                     </div>
-                    <p class="features-card-set__-title">Планирование</p>
+                    <p class="features-card-set__title">Планирование</p>
                     <p class="features-card-set__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
 
@@ -219,11 +188,10 @@
                 </li>
             </ul>
         </div>
-    </section> -->
-
+    </section> 
 
     <!-- ABOUT -->
-    <!-- <section class="about">
+   <section class="about"> 
         <div class="container">
             <div class="title">
                 <h2> Чем мы занимаемся </h2>
@@ -255,17 +223,17 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section> 
 
     <!-- TEAM -->
-    <!-- <section class="team">
+    <section class="team">
         <div class="container">
             <div class="title">
                 <h2>Наша команда</h2>
             </div>
             <ul class="team-card-set">
                 <li class="team-card-set__item">
-                    <img src="./images/team_item_1.jpg" alt="Игорь Демьяненко, Product Designer" width="270" height="260">
+                    <img src="./images/team_item_1.jpg" alt="Игорь Демьяненко, Product Designer">
                     <p class="team-card-set__title">Игорь Демьяненко</p>
                     <p class="team-card-set__text">Product Designer</p>
                     <ul class="social-list">
@@ -301,7 +269,7 @@
                 </li>
 
                 <li class="team-card-set__item">
-                    <img src="./images/team_item_2.jpg" alt="Ольга Репина, Frontend Developer" width="270" height="260">
+                    <img src="./images/team_item_2.jpg" alt="Ольга Репина, Frontend Developer">
                     <p class="team-card-set__title">Ольга Репина</p>
                     <p class="team-card-set__text">Frontend Developer</p>
                     <ul class="social-list">
@@ -337,7 +305,7 @@
                 </li>
 
                 <li class="team-card-set__item">
-                    <img src="./images/team_item_3.jpg" alt="Николай Тарасов, Marketing" width="270" height="260">
+                    <img src="./images/team_item_3.jpg" alt="Николай Тарасов, Marketing">
                     <p class="team-card-set__title">Николай Тарасов</p>
                     <p class="team-card-set__text">Marketing</p>
                     <ul class="social-list">
@@ -373,7 +341,7 @@
                 </li>
 
                 <li class="team-card-set__item">
-                    <img src="./images/team_item_4.jpg" alt="Михаил Ермаков, UI Designer" width="270" height="260">
+                    <img src="./images/team_item_4.jpg" alt="Михаил Ермаков, UI Designer">
                     <p class="team-card-set__title">Михаил Ермаков </p>
                     <p class="team-card-set__text">UI Designer</p>
                     <ul class="social-list">
@@ -409,10 +377,10 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
 
     <!-- CLIENTS -->
-    <!-- <section class="clients">
+    <section class="clients">
         <div class="container">
             <div class="title">
                 <h2>Постоянные клиенты</h2>
@@ -467,7 +435,7 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
 </main>
 
 <!-- <footer class="footer">
