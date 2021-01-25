@@ -10,14 +10,14 @@
 .about-card-set {
   @extend %list;
   display: flex;
-  margin-left: calc(-1 * var(--portfolio-cards-gap));
+  margin-left: calc(-1 * var(--cards-gap));
 }
 
 .about-card-set__item {
   position: relative;
 
-  flex-basis: calc(100% / 3 - var(--portfolio-cards-gap));
-  margin-left: var(--portfolio-cards-gap);
+  flex-basis: calc(100% / 3 - var(--cards-gap));
+  margin-left: var(--cards-gap);
 }
 
 .about-card-set__text {

@@ -12,8 +12,10 @@
 
   margin-top: var(--cards-gap);
 
-  &:not(:nth-child(3n + 1)) {
-    margin-left: var(--cards-gap);
+  @media screen and (min-width: 1200px) {
+    &:not(:nth-child(3n + 1)) {
+      margin-left: var(--cards-gap);
+    }
   }
 
   &:hover {

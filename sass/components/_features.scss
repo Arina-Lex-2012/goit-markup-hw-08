@@ -12,9 +12,11 @@
 .features-card-set {
   @extend %list;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
   }
 }
 
@@ -28,6 +30,15 @@
   }
 
   @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    flex-basis: calc(100% / 2 - 30px);
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -43,7 +54,14 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
-  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .features-card-set__text {

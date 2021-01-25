@@ -17,6 +17,12 @@
   color: var(--accents);
 }
 
+.navigation {
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -24,6 +30,10 @@
 
   @media screen and (min-width: 480px) {
     height: 59px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
   }
 }
 
@@ -34,7 +44,8 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 93px;
+    margin-left: 88px;
+    padding-bottom: 0px;
   }
 }
 
@@ -51,11 +62,25 @@
   }
 
   @media screen and (min-width: 768px) {
+    padding-top: 0px;
+    padding-bottom: 31px;
+
+    &:not(:last-child) {
+      padding-top: 33px;
+      margin-right: 50px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 33px;
     padding-bottom: 31px;
 
     &:not(:last-child) {
       margin-right: 50px;
+    }
+
+    &:last-child {
+      padding-top: 0;
     }
   }
 }
@@ -83,6 +108,9 @@
   @media screen and (min-width: 768px) {
     position: relative;
 
+    font-size: 14px;
+    line-height: 1.17;
+
     &.current::after {
       position: absolute;
       display: block;
@@ -102,10 +130,28 @@
   }
 }
 
+.address {
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 84px;
+    padding-top: 33px;
+    padding-bottom: 21px;
+  }
+}
+
 .address-nav {
   @extend %list;
 
   @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
     align-items: center;
@@ -127,9 +173,19 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    justify-content: left;
+
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 0px;
 
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: 50px;
     }
   }
 }
@@ -160,6 +216,19 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accents);
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
 
