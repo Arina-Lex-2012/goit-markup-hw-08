@@ -1,12 +1,12 @@
 .portfolio {
-  @media screen and (min-width: 480) {
+  @media screen and (min-width: 480px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  @media screen and (min-width: 1200) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 }
 
@@ -17,12 +17,24 @@
 .portfolio-button-set {
   @extend %list;
 
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  @media screen and (min-width: 480px) {
+    display: inline-flex;
+    margin-bottom: 50px;
+    justify-content: center;
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
+    &__item:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+
+    &__item:not(:last-child) {
+      margin-right: 8px;
+    }
   }
 }
 
