@@ -1,8 +1,10 @@
-<svg width="34" height="26" viewBox="0 0 34 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5 3.66667V1H29V3.66667H5ZM5 10.3333H29V7.66667H5V10.3333ZM5 17H29V14.3333H5V17Z" fill="black"/>
+<svg fill="none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="mobile-icon-menu" viewBox="0 0 34 26">
+<g  filter="url(#filter0_d)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 3.66667V1H29V3.66667H5ZM5 10.3333H29V7.66667H5V10.3333ZM5 17H29V14.3333H5V17Z" fill="red"/>
 <path d="M5 1V0.5H4.5V1H5ZM5 3.66667H4.5V4.16667H5V3.66667ZM29 1H29.5V0.5H29V1ZM29 3.66667V4.16667H29.5V3.66667H29ZM29 10.3333V10.8333H29.5V10.3333H29ZM5 10.3333H4.5V10.8333H5V10.3333ZM29 7.66667H29.5V7.16667H29V7.66667ZM5 7.66667V7.16667H4.5V7.66667H5ZM29 17V17.5H29.5V17H29ZM5 17H4.5V17.5H5V17ZM29 14.3333H29.5V13.8333H29V14.3333ZM5 14.3333V13.8333H4.5V14.3333H5ZM4.5 1V3.66667H5.5V1H4.5ZM29 0.5H5V1.5H29V0.5ZM29.5 3.66667V1H28.5V3.66667H29.5ZM5 4.16667H29V3.16667H5V4.16667ZM29 9.83333H5V10.8333H29V9.83333ZM28.5 7.66667V10.3333H29.5V7.66667H28.5ZM5 8.16667H29V7.16667H5V8.16667ZM5.5 10.3333V7.66667H4.5V10.3333H5.5ZM29 16.5H5V17.5H29V16.5ZM28.5 14.3333V17H29.5V14.3333H28.5ZM5 14.8333H29V13.8333H5V14.8333ZM5.5 17V14.3333H4.5V17H5.5Z" fill="black"/>
 </g>
+</symbol>
 <defs>
 <filter id="filter0_d" x="0.5" y="0.5" width="33" height="25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -14,4 +16,5 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
 </defs>
+
 </svg>
