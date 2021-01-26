@@ -1,3 +1,6 @@
+@import "utils/variables";
+@import "utils/placeholders";
+@import "components/navigation";
 @import "components/about";
 @import "components/clients";
 @import "components/common";
@@ -10,8 +13,6 @@
 @import "components/portfolio-buttons";
 @import "components/portfolio-cards";
 @import "components/team";
-@import "utils/variables";
-@import "utils/placeholders";
 
 body {
   font-family: Roboto, sans-serif;

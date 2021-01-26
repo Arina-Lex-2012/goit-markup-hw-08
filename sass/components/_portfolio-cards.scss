@@ -1,10 +1,17 @@
 .portfolio-card-set {
   @extend %list;
 
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 480px) {
+    display: inline-block;
+    margin-top: calc(-1 * var(--cards-gap));
+  }
 
-  margin-top: calc(-1 * var(--cards-gap));
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: calc(-1 * var(--cards-gap));
+  }
 }
 
 .portfolio-card-set__item {
