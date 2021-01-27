@@ -18,13 +18,26 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header-logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
+@media screen and (min-width: 480px) {
+  .header-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
 }
 
 .header-logo span {
@@ -751,6 +764,9 @@ img {
 }
 
 @media screen and (min-width: 480px) {
+  .footer-list__item {
+    text-align: center;
+  }
   .footer-list__item:not(:last-child) {
     padding-bottom: 60px;
   }
@@ -821,7 +837,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-list .social-list {
+    padding-left: 125px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-list .social-list {
+    padding: 0px;
+  }
 }
 
 .footer-list__item .social-list__item:not(:last-child) {
@@ -1324,13 +1351,26 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
+@media screen and (min-width: 480px) {
+  .header-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
 }
 
 .header-logo span {
@@ -1755,7 +1795,6 @@ img {
 
 @media screen and (min-width: 480px) {
   .portfolio-card-set {
-    display: inline-block;
     margin-top: calc(-1 * var(--cards-gap));
   }
 }
@@ -1773,6 +1812,18 @@ img {
 
 .portfolio-card-set__item {
   margin-top: var(--cards-gap);
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-card-set__item img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-card-set__item img {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1200px) {

@@ -20,6 +20,14 @@
 
 .footer-list__item {
   @media screen and (min-width: 480px) {
+    text-align: center;
+
+    // &:nth-child(2) {
+    //   & ul {
+    //     padding-left: 25%;
+    //   }
+    // }
+
     &:not(:last-child) {
       padding-bottom: 60px;
     }
@@ -98,7 +106,18 @@
 
   .footer-list & {
     display: flex;
-    padding: 0px;
+  }
+
+  @media screen and (min-width: 480px) {
+    .footer-list & {
+      padding-left: 125px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .footer-list & {
+      padding: 0px;
+    }
   }
 
   .footer-list__item &__item:not(:last-child) {

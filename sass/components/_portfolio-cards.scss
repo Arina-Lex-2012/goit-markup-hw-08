@@ -2,7 +2,6 @@
   @extend %list;
 
   @media screen and (min-width: 480px) {
-    display: inline-block;
     margin-top: calc(-1 * var(--cards-gap));
   }
 
@@ -16,6 +15,18 @@
 
 .portfolio-card-set__item {
   margin-top: var(--cards-gap);
+
+  @media screen and (min-width: 480px) {
+    & img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & img {
+      width: 50%;
+    }
+  }
 
   @media screen and (min-width: 1200px) {
     &:not(:nth-child(3n + 1)) {
