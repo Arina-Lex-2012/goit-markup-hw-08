@@ -284,6 +284,7 @@
 }
 
 .menu {
+  z-index: 1;
   &.is-open {
     display: block;
   }

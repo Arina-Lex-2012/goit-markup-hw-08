@@ -20,7 +20,6 @@
   @media screen and (min-width: 480px) {
     display: inline;
     justify-content: left;
-    width: 480px;
 
     margin-bottom: 50px;
 
@@ -42,6 +41,11 @@
 
     &__item:not(:last-child) {
       margin-right: 8px;
+    }
+
+    &__item:nth-child(4),
+    &__item:nth-child(5) {
+      margin-bottom: 0px;
     }
   }
 }
