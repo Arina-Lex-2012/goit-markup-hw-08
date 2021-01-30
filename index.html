@@ -234,10 +234,16 @@
             <ul class="team-card-set">
                 <li class="team-card-set__item">
                     <picture>
-                        <source srcset="./images/team_item_1-mob.jpg" media="(max-width:767px)">
+                        <!-- <source srcset="./images/team_item_1-mob.jpg" media="(max-width:767px)">
                         <source srcset="./images/team_item_1-tab.jpg" media="(max-width:1199px)">
-                        <source srcset="./images/team_item_1-desk.jpg" media="(min-width:1200px)">
-                        <img src="./images/team_item_1-desk.jpg" alt="Игорь Демьяненко, Product Designer">
+                        <source srcset="./images/team_item_1-desk.jpg" media="(min-width:1200px)"> -->
+                        <img srcset="
+                        ./images/team_item_1-origin.jpg 1x,
+                        ./images/team_item_1@2x.jpg 2x,
+                        ./images/team_item_1@3x.jpg 3x,
+                        "                        
+                        src="./images/team_item_1-origin.jpg" 
+                        alt="Игорь Демьяненко, Product Designer">
                     </picture>                   
                     
                     <p class="team-card-set__title">Игорь Демьяненко</p>
@@ -276,10 +282,16 @@
 
                 <li class="team-card-set__item">                    
                     <picture>
-                        <source srcset="./images/team_item_2-mob.jpg" media="(max-width:767px)">
+                        <!-- <source srcset="./images/team_item_2-mob.jpg" media="(max-width:767px)">
                         <source srcset="./images/team_item_2-tab.jpg" media="(max-width:1199px)">
-                        <source srcset="./images/team_item_2-desk.jpg" media="(min-width:1200px)">
-                        <img src="./images/team_item_2-desk.jpg" alt="Ольга Репина, Frontend Developer">
+                        <source srcset="./images/team_item_2-desk.jpg" media="(min-width:1200px)"> -->
+                        <img srcset="
+                        ./images/team_item_1-origin.jpg 1x,
+                        ./images/team_item_1@2x.jpg 2x,
+                        ./images/team_item_1@3x.jpg 3x,
+                        "
+                        src="./images/team_item_2-desk.jpg" 
+                        alt="Ольга Репина, Frontend Developer">
                     </picture>
                     
                     <p class="team-card-set__title">Ольга Репина</p>
@@ -322,7 +334,7 @@
                         <source srcset="./images/team_item_3-tab.jpg" media="(max-width:1199px)">
                         <source srcset="./images/team_item_3-desk.jpg" media="(min-width:1200px)">
                         <img src="./images/team_item_3-desk.jpg" alt="Николай Тарасов, Marketing">   
-                    </picture>
+                    </picture> 
 
                     <p class="team-card-set__title">Николай Тарасов</p>
                     <p class="team-card-set__text">Marketing</p>
