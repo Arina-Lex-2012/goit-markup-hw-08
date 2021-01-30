@@ -1965,6 +1965,10 @@ img {
   display: flex;
 }
 
+.team-card-set img {
+  width: 100%;
+}
+
 @media screen and (min-width: 480px) {
   .team-card-set {
     -ms-flex-wrap: wrap;

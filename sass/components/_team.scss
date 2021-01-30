@@ -15,6 +15,10 @@
 .team-card-set {
   @extend %list;
 
+  & img {
+    width: 100%;
+  }
+
   display: flex;
 
   @media screen and (min-width: 480px) {
