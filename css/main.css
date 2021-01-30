@@ -1191,13 +1191,13 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 480px) {
   .hero {
     padding-bottom: 118px;
     padding-top: 118px;
-    background-size: cover;
   }
 }
 
@@ -1205,7 +1205,6 @@ img {
   .hero {
     padding-bottom: 118px;
     padding-top: 118px;
-    background-size: cover;
   }
 }
 
@@ -1213,7 +1212,6 @@ img {
   .hero {
     padding-bottom: 200px;
     padding-top: 200px;
-    background-size: cover;
   }
 }
 

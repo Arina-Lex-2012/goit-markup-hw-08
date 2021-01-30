@@ -7,26 +7,21 @@
     ),
     url("../images/hero.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media screen and (min-width: 480px) {
     padding-bottom: 118px;
     padding-top: 118px;
-
-    background-size: cover;
   }
 
   @media screen and (min-width: 768px) {
     padding-bottom: 118px;
     padding-top: 118px;
-
-    background-size: cover;
   }
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 200px;
     padding-top: 200px;
-
-    background-size: cover;
   }
 }
 
