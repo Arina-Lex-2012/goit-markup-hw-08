@@ -354,7 +354,6 @@
 
 .menu {
   z-index: 1;
-  outline: 2px solid teal;
 }
 
 .menu.is-open {
@@ -1752,7 +1751,6 @@ img {
 
 .menu {
   z-index: 1;
-  outline: 2px solid teal;
 }
 
 .menu.is-open {
