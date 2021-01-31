@@ -442,11 +442,9 @@
   color: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
-  .clients {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
+.clients {
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -628,11 +626,9 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .features {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
+.features {
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1784,11 +1780,9 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .portfolio {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -2003,13 +1997,8 @@ img {
 
 .team {
   background: #f5f4fa;
-}
-
-@media screen and (min-width: 480px) {
-  .team {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
