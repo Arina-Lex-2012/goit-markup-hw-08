@@ -338,6 +338,10 @@
   }
 }
 
+.menu-button:hover, .menu-button:focus {
+  fill: var(--accents);
+}
+
 .menu-button .icon-cross {
   display: none;
 }
@@ -1731,6 +1735,10 @@ img {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button:hover, .menu-button:focus {
+  fill: var(--accents);
 }
 
 .menu-button .icon-cross {
