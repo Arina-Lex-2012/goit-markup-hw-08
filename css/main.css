@@ -323,9 +323,7 @@
 .menu-button {
   position: absolute;
   right: 15px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  top: 10px;
   margin: 0;
   padding: 0;
   border: none;
@@ -1722,9 +1720,7 @@ img {
 .menu-button {
   position: absolute;
   right: 15px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  top: 10px;
   margin: 0;
   padding: 0;
   border: none;
