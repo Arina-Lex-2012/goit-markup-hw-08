@@ -1,0 +1,145 @@
+/* header */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+  color: $logo-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  &--accent {
+    color: $accent-color;
+  }
+}
+
+/* nav */
+.nav {
+  display: flex;
+  height: 80px;
+}
+
+/* site nav & auth nav*/
+.site-nav,
+.auth-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav__item {
+  display: flex;
+
+  & + & {
+    margin-left: 50px;
+  }
+}
+
+.site-nav__link {
+  position: relative;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $title-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    display: block;
+    content: '';
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+
+    background-color: $accent-color;
+  }
+
+  &.current {
+    color: $accent-color;
+  }
+
+  &.hidden::after {
+    transform: scaleX(0);
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
+
+  &.hidden:hover::after {
+    transform: scaleX(1);
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+/* auth nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav__item {
+  display: flex;
+
+  & + & {
+    margin-left: 50px;
+  }
+}
+
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: $primary-text-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  .auth-nav__link:hover &,
+  .auth-nav__link:focus & {
+    fill: $accent-color;
+  }
+}
+
+.auth-nav__link {
+  display: flex;
+  align-items: center;
+  color: $primary-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
