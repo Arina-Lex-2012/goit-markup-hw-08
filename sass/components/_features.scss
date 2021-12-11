@@ -1,37 +1,37 @@
 /* features */
-.features__list {
-  display: flex;
-}
+// .features__list {
+//   display: flex;
+// }
 
-.features__item {
-  position: relative;
+// .features__item {
+//   position: relative;
 
-  & + & {
-    margin-left: $card-set-gap;
-  }
-}
+//   & + & {
+//     margin-left: $card-set-gap;
+//   }
+// }
 
-.features__image {
-  display: block;
-}
+// .features__image {
+//   display: block;
+// }
 
-.features__container {
-  position: absolute;
-  bottom: 0;
+// .features__container {
+//   position: absolute;
+//   bottom: 0;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 370px;
-  height: 70px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 370px;
+//   height: 70px;
 
-  background: rgba(47, 48, 58, 0.8);
-}
+//   background: rgba(47, 48, 58, 0.8);
+// }
 
-.features__text {
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
+// .features__text {
+//   font-weight: 700;
+//   line-height: 1.14;
+//   text-transform: uppercase;
 
-  color: $primary-white-color;
-}
+//   color: $primary-white-color;
+// }

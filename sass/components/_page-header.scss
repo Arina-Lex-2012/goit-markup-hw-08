@@ -1,6 +1,9 @@
 /* header */
 .page-header {
   border-bottom: 1px solid #ececec;
+  width: 100%;
+  height: 60px;
+  outline: 1px solid tomato;
 }
 
 /* container */
@@ -14,16 +17,33 @@
 
 /* logo */
 .logo {
-  display: flex;
-  align-items: center;
-  color: $logo-color;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.08;
+
+  color: $title-text-color;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+
+    font-size: 26px;
+    line-height: 1.2;
+
+    color: $logo-color;
+  }
 
   &--accent {
     color: $accent-color;
+  }
+}
+
+/* menu-burger */
+.menu-icon {
+  &:hover,
+  &:focus {
+    --main-color: #{$accent-color};
   }
 }
 
