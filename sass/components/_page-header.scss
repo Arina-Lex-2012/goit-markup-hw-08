@@ -47,13 +47,22 @@
 
 /* site nav */
 .site-nav {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 306px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   outline: 1px solid tomato;
 }
 
 .site-nav__item {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 32px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -140,6 +149,11 @@
 .auth-nav {
   outline: 1px solid teal;
 
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   @media screen and (min-width: 768px) {
     margin-left: 84px;
   }
@@ -147,11 +161,17 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    margin-left: 305px;
+    margin-left: 300px;
   }
 }
 
 .auth-nav__item {
+  &:last-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
+  }
+
   &:first-child {
     @media screen and (min-width: 768px) {
       margin-bottom: 10px;
@@ -201,13 +221,6 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  @media screen and (max-width: 767px) {
-    font-size: 34px;
-    line-height: 1.18;
-
-    color: $accent-color;
-  }
-
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -231,15 +244,33 @@
     }
   }
 
+  &--accent {
+    @media screen and (max-width: 767px) {
+      font-size: 34px;
+      line-height: 1.18;
+
+      color: $accent-color;
+    }
+  }
+
+  &--primary {
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 1.17;
+
+      color: $primary-text-color;
+    }
+  }
+
   &--top {
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding-top: 21px;
       padding-bottom: 0;
     }
   }
 
   &--bottom {
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding-top: 0;
       padding-bottom: 21px;
     }

@@ -151,14 +151,25 @@ p {
 
 /* site nav */
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   outline: 1px solid tomato;
 }
 
 @media screen and (max-width: 767px) {
-  .site-nav__item {
+  .site-nav {
+    margin-bottom: 306px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
@@ -255,6 +266,18 @@ p {
   outline: 1px solid teal;
 }
 
+@media screen and (max-width: 767px) {
+  .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .auth-nav {
     margin-left: 84px;
@@ -269,7 +292,13 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 305px;
+    margin-left: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .auth-nav__item:last-child {
+    margin-bottom: 32px;
   }
 }
 
@@ -327,14 +356,6 @@ p {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 767px) {
-  .auth-nav__link {
-    font-size: 34px;
-    line-height: 1.18;
-    color: #2196f3;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .auth-nav__link {
     display: -webkit-box;
@@ -367,14 +388,30 @@ p {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .auth-nav__link--accent {
+    font-size: 34px;
+    line-height: 1.18;
+    color: #2196f3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .auth-nav__link--primary {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #757575;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth-nav__link--top {
     padding-top: 21px;
     padding-bottom: 0;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth-nav__link--bottom {
     padding-top: 0;
     padding-bottom: 21px;
@@ -403,6 +440,7 @@ p {
 
 .menu-container.is-open {
   display: block;
+  height: 796px;
 }
 
 @media screen and (max-width: 767px) {
@@ -414,6 +452,8 @@ p {
     width: 100%;
     padding: 48px 40px 48px 40px;
     background-color: #ffffff;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 }
 
