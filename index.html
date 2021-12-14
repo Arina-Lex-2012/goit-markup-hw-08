@@ -19,41 +19,52 @@
         <nav class="nav container">
             <a class="logo" href="/"><span class="logo--accent">Web</span>Studio</a>
 
-            <svg class="menu-icon" aria-label="menu" width="24" height="16">
-                <use href="./images/sprite.svg#menu"></use>
-            </svg>
-        
-            <!-- <ul class="site-nav">
-                <li class="site-nav__item">
-                    <a class="site-nav__link current" href="./index.html">Студия</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link hidden" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link hidden" href="./contacts.html">Контакты</a>
-                </li>
-            </ul>
-        
-            <ul class="auth-nav">
-                <li class="auth-nav__item">
-                    <a class="auth-nav__link" href="mailto:info@example.com">
-                        <svg class="auth-nav__icon" aria-label="envelope" width="20" height="20">
-                            <use href="./images/sprite.svg#envelope"></use>
-                        </svg>
-                        <p>info@example.com</p>
-                    </a>
-                </li>
+            <button  
+            type="button" 
+            class="menu-button" 
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button>
+                <svg class="menu-icon" aria-label="Переключение мобильного меню" width="40" height="40">
+                    <use class="menu-icon__burger" href="./images/sprite.svg#menu"></use> 
+                    <use class="menu-icon__cross" href="./images/sprite.svg#menu-cross"></use>
+                </svg>
+            </button>
+
+            <div class="menu-container" id="menu-container" data-menu>
+                <ul class="site-nav">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link current" href="./index.html">Студия</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link hidden" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link hidden" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
                 
-                <li class="auth-nav__item">
-                    <a class="auth-nav__link" href="tel:+380991111111">
-                        <svg class="auth-nav__icon" aria-label="envelope" width="20" height="20">
-                            <use href="./images/sprite.svg#smartphone"></use>
-                        </svg>                 
-                        <p>+38 099 111 11 11</p>
-                    </a>
-                </li>
-            </ul> -->
+                <ul class="auth-nav">
+                    <li class="auth-nav__item">
+                        <a class="auth-nav__link auth-nav__link--top" href="mailto:info@example.com">
+                            <svg class="auth-nav__icon" aria-label="envelope" width="20" height="20">
+                                <use href="./images/sprite.svg#envelope"></use>
+                            </svg>
+                            <p>info@example.com</p>
+                        </a>
+                    </li>
+                
+                    <li class="auth-nav__item">
+                        <a class="auth-nav__link auth-nav__link--bottom" href="tel:+380991111111">
+                            <svg class="auth-nav__icon" aria-label="envelope" width="20" height="20">
+                                <use href="./images/sprite.svg#smartphone"></use>
+                            </svg>
+                            <p>+38 099 111 11 11</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>        
+ 
         </nav>
     </header>
 
@@ -500,5 +511,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
