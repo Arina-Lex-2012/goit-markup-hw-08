@@ -54,8 +54,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
-
-  outline: 1px solid tomato;
 }
 
 .site-nav__item {
@@ -147,8 +145,6 @@
 
 /* auth nav */
 .auth-nav {
-  outline: 1px solid teal;
-
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
