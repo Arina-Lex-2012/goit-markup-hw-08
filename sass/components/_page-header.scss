@@ -114,9 +114,7 @@
   }
 
   &.current {
-    @media screen and (min-width: 768px) {
-      color: $accent-color;
-    }
+    color: $accent-color;
   }
 
   &.hidden::after {
@@ -137,9 +135,7 @@
 
   &:hover,
   &:focus {
-    @media screen and (min-width: 768px) {
-      color: $accent-color;
-    }
+    color: $accent-color;
   }
 }
 

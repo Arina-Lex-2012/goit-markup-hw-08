@@ -42,8 +42,37 @@
   }
 }
 
+.menu-social {
+  margin-top: 64px;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.menu-social-set {
+  display: flex;
+}
+
+.menu-social__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.menu-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
+
 .menu-icon {
-  z-index: 2;
+  z-index: 1;
 }
 
 .menu-icon__burger {
