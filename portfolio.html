@@ -24,22 +24,21 @@
     <!-- page-header -->
     <header class="page-header">
       <nav class="nav container">
-        <a class="logo" href="/"><span class="logo--accent">Web</span>Studio</a>
-
-        <button
-          type="button"
-          class="menu-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
+        <a class="logo" href="/"><span class="logo--accent">Web</span>Studio </a>
+    
+        <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="menu-icon" aria-label="Переключение мобильного меню" width="40" height="40">
             <use class="menu-icon__burger" href="./images/sprite.svg#menu"></use>
-            <use class="menu-icon__cross" href="./images/sprite.svg#menu-cross"></use>
           </svg>
         </button>
-
-        <div class="menu-container" id="menu-container" data-menu>
+    
+        <div class="menu-container js-menu-container" id="menu-container" data-menu>
+          <button class="menu-button js-close-menu">
+            <svg class="menu-icon" aria-label="Переключение мобильного меню" width="40" height="40">
+              <use class="menu-icon__cross" href="./images/sprite.svg#menu-cross"></use>
+            </svg>
+          </button>
+    
           <ul class="site-nav">
             <li class="site-nav__item">
               <a class="site-nav__link hidden" href="./index.html">Студия</a>
@@ -51,7 +50,7 @@
               <a class="site-nav__link hidden" href="./contacts.html">Контакты</a>
             </li>
           </ul>
-
+    
           <ul class="auth-nav">
             <li class="auth-nav__item">
               <a class="auth-nav__link auth-nav__link--top" href="mailto:info@devstudio.com">
@@ -61,7 +60,7 @@
                 <p class="auth-nav__link--primary">info@devstudio.com</p>
               </a>
             </li>
-
+    
             <li class="auth-nav__item">
               <a class="auth-nav__link auth-nav__link--bottom" href="tel:+380961111111">
                 <svg class="auth-nav__icon" aria-label="envelope" width="20" height="20">
@@ -71,6 +70,31 @@
               </a>
             </li>
           </ul>
+    
+          <div class="menu-social">
+            <ul class="menu-social-set">
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">
+                  <p>Instagram</p>
+                </a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">
+                  <p>Twitter</p>
+                </a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">
+                  <p>Facebook</p>
+                </a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">
+                  <p>LinkedIn</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
