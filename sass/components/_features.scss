@@ -1,9 +1,9 @@
 /* features */
-.features {
+.features.section {
+  padding-top: 0;
+
   @media screen and (max-width: 1199px) {
     display: none;
-    padding-top: 0;
-    padding-bottom: 94px;
   }
 }
 
